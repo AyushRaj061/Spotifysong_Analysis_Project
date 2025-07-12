@@ -8,14 +8,30 @@ This project focuses on analyzing the top Spotify songs from 2010 to 2019 using 
 
 ## 📁 Dataset
 - **Source:** Kaggle – Top Spotify Songs 2010–2019
-- Contains data on:
-  - Song Title
-  - Artist
-  - Genre
-  - Popularity
-  - Danceability
-  - Energy, Tempo, Valence, etc.
-  - Year, Duration, Loudness
+- **File**: `data/top_spotify_2010_2019.csv`
+- **Rows**: 1000 tracks (Top 100 songs per year)
+- **Format**: CSV, UTF-8
+
+### 🧾 Features Included:
+#### 🎵 Song Metadata:
+- `title`: Song name
+- `artist`: Artist name
+- `top_genre`: Genre of the song
+- `year`: Year of release
+
+#### 🔊 Audio Features:
+- `bpm`: Beats per minute
+- `nrgy`: Energy (0–100)
+- `dnce`: Danceability (0–100)
+- `val`: Valence/musical positivity
+- `dur`: Duration (in seconds)
+- `db`: Loudness
+- `live`: Liveness score
+- `acous`: Acousticness
+- `spch`: Speechiness
+- `pop`: Popularity score
+
+> 📌 Column names are abbreviated as per original Kaggle dataset. Cleaned and used for trend analysis.
 
 ---
 
